@@ -1,7 +1,7 @@
 // Access HTML elements
-let doorImage1 = document.getGetElementById('door1');
-let doorImage2 = document.getGetElementById('door2');
-let doorImage3 = document.getGetElementById('door3');
+let doorImage1 = document.getElementById('door1');
+let doorImage2 = document.getElementById('door2');
+let doorImage3 = document.getElementById('door3');
 let startButton = document.getElementById('start');
 
 let botDoorPath = 'https://content.codecademy.com/projects/chore-door/images/robot.svg';
@@ -23,7 +23,7 @@ const isClicked = (door) => {
   } else {
     return false;
   }
-}
+};
 
 const isBot = (door) => {
   if(door.src === botDoorPath) {
@@ -31,7 +31,7 @@ const isBot = (door) => {
   } else {
     return false;
   }
-}
+};
 
 const gameOver = (status) => {
   if (status === 'win') {
@@ -67,6 +67,7 @@ const randomChoreDoorGenerator = () => {
     openDoor3 = botDoorPath;
   }
 }
+
 
 doorImage1.onclick = () => {
   if (currentlyPlaying && isClicked(doorImage1)) {
