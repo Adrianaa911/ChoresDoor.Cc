@@ -15,6 +15,7 @@ let openDoor2;
 let openDoor3;
 let currentlyPlaying = true;
 
+
 // Define game logic to check doors, progress game, end game, and choose a random chore door
 
 const isClicked = (door) => {
