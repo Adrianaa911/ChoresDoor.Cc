@@ -43,12 +43,10 @@ body {
   .door-row {
     text-align: center;
   }
-  
   .door-frame {
     cursor: pointer;
     padding: 10px;
   }
-  
   .start-row {
     margin: auto;
     width: 120px;
